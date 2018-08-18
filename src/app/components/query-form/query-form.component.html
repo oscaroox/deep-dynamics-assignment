@@ -1,0 +1,15 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+    <mat-form-field appearance="fill">
+        <mat-label>Keyword</mat-label>
+        <input [(ngModel)]="keyword"  name="keyword" matInput placeholder="Placeholder" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Synonyms</mat-label>
+        <input [(ngModel)]="synonyms" name="synonyms" matInput placeholder="Placeholder">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Group</mat-label>
+        <input [(ngModel)]="group" name="group" matInput placeholder="Placeholder" required>
+    </mat-form-field>
+    <button>Add</button>
+</form>
